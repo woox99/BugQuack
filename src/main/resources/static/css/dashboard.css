@@ -1,0 +1,450 @@
+:root {
+  --colorTheme: #030014;
+}
+	
+	
+body{
+	height: 110vh;
+}
+.nav .links a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	border: 0.15vw solid var(--colorTheme);
+	border-radius: 10vw;
+	color: #ffffff;
+	text-decoration: none;
+	width: 4.25vw;
+	height: 4.25vw;
+	transition: 0.25s;
+}
+.colorPalette{
+	position: absolute;
+   	left: 50%; 
+  	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap:0.5vw;
+}
+.colorPalette div{
+	width: 3vw;
+	height: 3vw;
+	border-radius: 0.5vw; 
+	border: 0.15vw solid #211f2a;
+	cursor:pointer;
+	transition: .25s;
+}
+.colorPalette div:hover{
+	transform:scale(1.1)
+}
+.orange{
+	background-color: #ff8600;
+	opacity: 50%;
+}
+.yellow{
+	background-color:#ffc41b;
+	opacity: 50%;
+}
+.blue{
+	background-color:#00a4ed;
+	opacity: 50%;
+}
+.purple{
+	background-color:#c300ff;
+	opacity: 50%;
+}
+.logout img{
+	width: 3vw;
+	margin-right: -.75vw;
+	transition: 0.25s;
+}
+.links a:hover{
+	font-size: calc(1.5rem * 1.1);
+}
+.links a:hover img{
+	transform: scale(1.1)
+}
+
+
+
+.container{
+	margin: 6vw 11.3vw 6vw 5vw; 
+}
+/* ##### NEW PROJECT ##### */
+.addProject{
+	height: 6.65vw;
+	overflow: hidden;
+	width: 25vw;
+	transition: 0.25s;
+}
+.addProject form{
+	width: 26.3vw;
+	display: none;
+}
+.addProject .title{
+	display:flex;
+	align-items: center;
+	font-size:1.5rem;	
+	font-weight: 800;
+	margin-top: 1vw;
+	margin-bottom: 2vw;
+}
+.circleLink{
+	cursor: pointer;
+	border: .15vw solid var(--colorTheme);
+	transition: .25s;
+}
+.circleLink img{
+	width: 3vw;
+	transition: 0.25s;
+}
+.addMembersText{
+	margin-bottom: 1vw;
+}
+.members{
+	display: flex;
+}
+.member{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4vw;
+	height: 4vw;
+	border-radius: 50%;
+	border: 0.15vw solid var(--colorTheme);
+	font-size: 1.3rem;
+	font-weight: 800;
+	margin-right: 1vw;
+	transition: .25s;
+}
+.owner{
+	background-color: var(--colorTheme) !important;
+	border: 0.15vw solid var(--colorTheme);
+	color: #211f2a;
+	font-size:1.5rem;
+	transition: .25s;
+}
+.addMember{
+	width: 4vw;
+	height: 4vw;
+	border-radius: 50%;
+	border: 0.15vw solid var(--colorTheme);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: .25s;
+}
+.addMember img{
+	width: 2vw;
+}
+.memberFeedback{
+	font-size: 0.8rem;
+	transition: 0.25s;
+}
+.addEmail{
+	margin-top: 1vw;
+	opacity: 0;
+	transition: 0.25s;
+	margin-bottom:1vw;
+}
+.addEmail input{
+	position: absolute;
+	padding-right: 4vw;
+	width: 21vw;
+	border: 0.15vw solid var(--colorTheme);
+	transition: .25s;
+}
+.addEmail button{
+	position: relative;
+	top: 0.3vw;
+	left: 23vw;
+	border: none;
+	border-radius: 0vw;
+	width: 3vw;
+	height: 3vw;
+}
+.addEmail img{
+	width: 2vw;
+}
+.projectNameValidation{
+	opacity: 0%;
+	font-size: 0.8rem;
+	transition: 0.25s;
+}
+.projectNameInput{
+	border: 0.15vw solid var(--colorTheme);
+	transition: .25s;
+}
+.flex-end{
+	display:flex;
+	justify-content: end;
+}
+.createButton{
+	margin-top: 1vw;
+	opacity: 25%;
+	border: 0.15vw solid var(--colorTheme);
+	transition: 0.25s;
+}
+
+
+
+/* ##### PROJECTS ##### */
+.project{
+	height: 6.65vw;
+	margin-top: 5vw;
+	overflow: hidden;
+	transition: 0.25s;
+}
+.unexpanded{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items:center;
+	margin-top:1vw;
+	margin-bottom:2vw;
+}
+.project .circleLink img{
+	margin-right: -0.10vw;
+	width: 3.5vw;
+}
+.project .title{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.project .title a{
+	text-decoration: none;
+	color:white;
+	transition: 0.25s;
+}
+.project .title a:hover{
+	color: var(--colorTheme);
+}
+.project .updatedAtText{
+	font-size: 0.8rem;
+	color: #9c9c9c;
+}
+.project .members{
+	position:absolute;
+	left: 30vw;
+}
+.project .icons{
+	position: absolute;
+	right: -1vw;
+	display: flex;
+	align-items: center;
+	gap:1vw;
+	cursor: pointer;
+}
+.getTaskCount{
+	position: relative;
+}
+.getTaskCount p{
+	position: absolute;
+	top: -0.25vw;
+	left: -.75vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--colorTheme);
+	min-width:1.5vw;
+	height: 1.5vw;
+	padding: 0.2vw;
+	border-radius: 10vw;
+	color: #211f2a;
+	font-weight: 700;
+	border: 0.35vw solid #211f2a;
+	transition: .25s;
+}
+.getTaskCount img{
+	width: 4vw;
+}
+.expandButton{
+	position: relative;
+	width: 3.75vw;
+	height: 3.75vw;
+	transition: 0.25s;
+}
+.expanded{
+	padding-left: 6vw;
+	padding-right: 4vw;
+}
+
+
+/* ##### TASKS ##### */
+.tasks{
+	overflow-y:scroll;
+	height: 16vw;
+}
+.tasks::-webkit-scrollbar {
+  width: 1vw;
+}
+.tasks::-webkit-scrollbar-track {
+  background: #211f2a;
+  border-radius: 10vw;
+}
+.tasks::-webkit-scrollbar-thumb {
+  background: #9c9c9c; 
+  border-radius: 10vw; 
+}
+.tasks::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change the color on hover */
+}
+.task{
+	display: inline-block;
+	margin-bottom: 1.5vw;
+	cursor: pointer;
+}
+.taskContents{
+	display: flex;
+}
+.checkbox{
+	width: 2vw;
+	height: 2vw;
+	border: 0.15vw solid var(--colorTheme);
+	border-radius: 0.5vw;
+	margin-right: 1vw;
+}
+.checkbox img{
+	position: relative;
+	width: 2vw !important;
+	margin: 0vw 0vw .75vw 0.25vw;
+}
+.stamp{
+	display: flex;
+	align-items:center;
+	color: #9c9c9c;
+	font-size:0.8rem;
+}
+.stamp .member{
+	width: 1.75vw;
+	height: 1.75vw;
+	margin-right: 0;
+	margin-left: 0.5vw;
+	font-weight: 500;
+	font-size: 0.7rem;
+	border: 0.1vw solid var(--colorTheme);
+}
+.resolved {
+	opacity: 50%;
+}
+.resolved .instructions {
+	text-decoration: line-through;
+}
+
+
+/* ##### MOBILE ##### */
+@media (max-width: 600px){
+	.colorPalette{
+		display:none !important;
+	}
+	.links{
+		gap: 5vw !important;
+		margin-right: 5vw !important;
+	}
+	.links a{
+		padding: 3vw;
+	}
+	.links img{
+		width: 6vw;	
+	}
+	.addProject{
+		height: 70vw;
+		width: 70vw;
+	}
+	.circleLink{
+		width: 6vw !important;	
+		height: 6vw !important;
+	}
+	.addProject .circleLink{
+		display: none;
+	}
+	.newProjectForm{
+		width: 60vw !important;
+		display: block !important;
+	}
+	.addProject .member{
+		width: 10vw !important;
+		height: 10vw !important;
+	}
+	.addProject .addMember{
+		width: 10vw !important;
+		height: 10vw !important;
+	}
+	.addMember img{
+		width: 6vw !important;
+		height: 6vw !important;
+	}
+	.addProject input{
+		width: 50vw;
+		height: 6vw;
+		padding: 0;
+		font-size: 1rem;
+		margin-bottom: 5vw;
+	}
+	.addEmail button{
+		margin-left: 20vw;
+		width: 6vw !important;
+		height: 6vw !important;
+	}
+	.addEmail img{
+		width: 5.5vw !important;
+		height: 5.5vw !important;
+	}
+	.createButton{
+		width: 16vw;
+		height: 8vw;
+	}
+	.project{
+		height: 55vw !important;
+		width: 85vw;
+		margin-bottom: 10vw;
+	}
+	.project .members{
+	margin-top: 22vw;
+	}
+	.project .member{
+		width: 5vw;
+		height: 5vw;
+		font-size: 0.8rem;
+	}
+	.expandButton{
+	display:none;
+	}
+	.icons p{
+		width: 4vw;
+		height: 4vw;
+	}
+	.icons img{
+		width: 8vw;
+		height: 8vw;
+	}
+	.expanded{
+		margin-top: 13vw;
+		padding: 0 !important;
+	}
+	.tasks{
+		height: 30vw;
+		margin-left: -3vw;
+	}
+	.task{
+		margin-bottom:4vw;
+	}
+	.task .checkbox{
+		width: 4vw !important;
+		height: 4vw !important;
+	}
+	.task .checkbox img{
+		width: 4vw !important;
+		height: 4vw !important;
+	}
+	.tasks .member{
+	display:none;
+	}
+	.task p{
+		max-width: 75vw;
+	}
+}

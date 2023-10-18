@@ -1,0 +1,86 @@
+.nav a{
+	font-size: 1.5rem;
+	border: 0.15vw solid #ff8600;
+	border-radius: 10vw;
+	padding: .5vw 2vw .5vw 2vw;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+.login{
+	padding: 5vw;
+	margin-bottom: 2vw;
+	margin-top: 5vw;
+}
+.register{
+	padding: 5vw;
+	margin-top: 2vw;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+.orange{
+	color: #ff8600;
+}
+.input{
+	margin-top:1vw;
+}
+input{
+	border: 1px solid #030014;
+	background-color: #211f2a;
+	width:25vw;
+	height: 2.5vw;
+	border-radius: 0.5vw;
+	outline: none;
+	color: white;
+	padding-left: 0.5vw;
+	margin-top:0.25vw;
+	font-size: 1rem;
+}
+
+input:focus{
+	background-color: #9c9c9c;
+	border: none;
+	outline: none;
+	border: 1px solid #ff8600;
+}
+button{
+	align-self: end;
+	margin-top: 1vw;
+}
+a{
+	color: #ff8600;
+	text-decoration: none;
+}
+.demo{
+	text-align: center;
+	margin-top: 2vw;
+}
+
+
+/* ##### MOBILE ##### */
+@media (max-width: 600px){
+	
+	.login,
+	.register{
+		width: 60vw;
+		margin-top: 5vw;
+	}
+	
+	input{
+		width: 60vw;
+		height: 7vw;
+	}
+	button{
+		width: 20vw;
+		height: 8vw;
+		margin-top: 4vw;
+	}
+}

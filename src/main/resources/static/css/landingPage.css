@@ -1,0 +1,52 @@
+.nav a{
+	font-size: 1.5rem;
+	border: 0.15vw solid #ff8600;
+	border-radius: 10vw;
+	padding: .5vw 2vw .5vw 2vw;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none
+}
+
+.demoAccountLink{
+	text-align: center;
+	margin-top: 35vh;
+}
+.demoAccountLink a{
+	position: fixed;
+	left: 50%; 
+  	transform: translateX(-50%);
+	color: #030014;
+	text-decoration:none;
+	background-color: #ff8600;
+	padding: 1vw 2.25vw 1vw 2.25vw;
+	border-radius: 10vw;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+.landingPageImgs{
+	position: absolute;
+   	z-index: -1;
+   	left: 50%;
+   	top: 10vw; 
+  	transform: translateX(-50%);
+	height: 10vw;
+	opacity: 40%;	
+}
+.landingPageImgs img{
+	width: 90vw;
+}
+
+/* ##### MOBILE ##### */
+@media (max-width: 600px){
+	.landingPageImgs{
+		margin-top: 20vw;
+	}
+	
+	.landingPageImg2,
+	.landingPageImg3{
+		display: block !important;
+	
+	}
+	
+}

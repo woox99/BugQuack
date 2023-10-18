@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+/* ##### COLOR PALATTE #####
+
+#030014 dark purple - background 
+#ffffff white - text & icons
+#211f2a card
+#c300ff50 opacity purple - resolved tasks 
+#9c9c9c grey - resolved task, created at, updated at text
+#ff8600 orange - bug logo
+#ffc41b yellow
+#00a4ed blue
+#c300ff purple 
+*/
+
+/* ##### BORDER RADIUS #####
+0.5vw card sharp
+
+##### BODER WIDTH #####
+0.2vw
+0.15vw
+
+
+##### FONT SIZE #####
+2.2rem
+2rem
+1.75rem
+1.5rem
+1.3rem
+0.8rem
+
+##### FONT WEIGHT #####
+800
+
+##### TRANSITION #####
+0.25s
+*/
+
+html{
+	font-size: 1.25vw;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #030014;
+    color: #ffffff;
+    font-family: 'Open sans';
+}
+.flex{
+	display: flex;
+}
+button{
+    font-family: 'Open sans';
+    font-size: 1.3rem;
+    color: white;
+    border: 0.15vw solid #ff8600;
+	background-color: #211f2a00;
+	width: 8vw;
+	height: 3.5vw;
+	border-radius: 10vw;
+}
+button:hover{
+	cursor: pointer;
+}
+.circleLink{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 4.25vw;
+	height: 4.25vw;
+	border-radius: 50%;
+	border: 0.2vw solid #ff8600;
+	margin-right: 1.5vw;
+}
+.circleLink img{
+	width: 3vw;
+}
+.card{
+	background-image: linear-gradient(#211f2a, #211f2a25);
+	border-radius: 0.5vw 5vw 0.5vw 5vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+
+input{
+	background-color: #211f2a;
+	border: 1px solid #ff8600;
+	height: 3vw;
+	padding-left: 1vw;
+	width:25vw;
+	border-radius: 0.5vw;
+	outline: none;
+	color: white;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding-top: 1vw;
+}
+.nav .title{
+	display: flex;
+	align-items:center;
+	font-weight: 800;
+	font-size: 2rem;
+	margin-left: 1vw;
+}	
+.nav img{
+	width: 4vw;
+}
+.nav .links {
+	display: flex;
+	gap: 1vw;
+	margin-right: 1vw;
+}
+
+
+/* ##### MOBILE ##### */
+@media (max-width: 600px){
+	html{
+		font-size: 3vw !important;
+	}
+	.nav{
+		margin-top: 5vw;
+	}
+	.nav img{
+		width: 8vw;
+	}
+}

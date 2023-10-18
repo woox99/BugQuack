@@ -1,0 +1,598 @@
+:root {
+  --colorTheme: #030014;
+}
+	
+body{
+	height: 110vh;
+}
+.nav .links a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	border: 0.2vw solid var(--colorTheme);
+	border-radius: 10vw;
+	color: #ffffff;
+	text-decoration: none;
+	width: 4.25vw;
+	height: 4.25vw;
+	transition: 0.25s;
+}
+.colorPalette{
+	position: absolute;
+   	left: 50%; 
+  	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap:0.5vw;
+}
+.colorPalette div{
+	width: 3vw;
+	height: 3vw;
+	border-radius: 0.5vw; 
+	border: 0.15vw solid #211f2a;
+	cursor:pointer;
+	transition: .25s;
+}
+.colorPalette div:hover{
+	transform:scale(1.1)
+}
+.orange{
+	background-color: #ff8600;
+	opacity: 50%;
+}
+.yellow{
+	background-color:#ffc41b;
+	opacity: 50%;
+}
+.blue{
+	background-color:#00a4ed;
+	opacity: 50%;
+}
+.purple{
+	background-color:#c300ff;
+	opacity: 50%;
+}
+.logout img{
+	width: 3vw;
+	margin-right: -.75vw;
+	transition: 0.25s;
+}
+.links a:hover{
+	font-size: calc(1.5rem * 1.1);
+}
+.links a:hover img{
+	transform: scale(1.1)
+}
+
+
+
+
+.container{
+	margin: 6vw 11.3vw 6vw 5vw; 
+	padding-bottom: 5vw;
+}
+/* ##### PROJECT TITLE ##### */
+.projectTitle .name{
+	display:flex;
+	align-items:center;
+	font-size: 2.5rem;
+	font-weight: 800;
+	gap: 1vw;
+}
+.projectTitle .icon{
+	display:Flex;
+	justify-content: center;
+	align-items: center;
+	width: 3vw;
+	height: 3vw;
+	border-radius: 50%;
+	background-color: #211f2a;
+}
+.projectTitle img{
+	width: 1.75vw;
+	height: 1.8vw;
+	margin-top: 0.25vw;
+	cursor: pointer;
+}
+.projectTitle .editName{
+	display: none;
+}
+.projectTitle .editName form{
+	display: flex;
+	align-items:center;
+	gap: 2vw;
+}
+.projectTitle input{
+	height: 4.1vw;
+	width: 26vw;
+	font-size: 2.3rem;
+	font-weight: 800;
+	padding: 0;
+	border: .15vw solid black;
+}
+.projectTitle input:focus{
+	border: .15vw solid var(--colorTheme);
+}
+.projectTitle button{
+	font-size:0.8rem;
+	border: .15vw solid var(--colorTheme);
+	width: 6vw;
+	height: 3vw;
+}
+.projectTitle .saveButton{
+	opacity: 50%;
+}
+.confirmDelete{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color:#03001490;
+}
+.confirmDeleteAlert{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	opacity: 100%;
+	background-color: #211f2a;
+	padding: 3vw 5vw 3vw 5vw;
+	border-radius: 5vw 0.5vw 5vw 0.5vw;
+}
+.warning{
+	font-size: 1.3rem;
+	font-weight: 500;
+	margin-bottom: 2vw;
+}
+.confirmDelete .buttons{
+	margin-top: 2vw;
+}
+.confirmDelete a{
+	text-decoration: none;
+	color: white;
+}
+.confirmDelete button{
+	font-size: 1rem;
+	margin-left: 2vw;
+}
+.confirmLeaveTeam{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color:#03001490;
+}
+.confirmLeaveTeamAlert{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	opacity: 100%;
+	background-color: #211f2a;
+	padding: 3vw 5vw 3vw 5vw;
+	border-radius: 5vw 0.5vw 5vw 0.5vw;
+}
+.confirmLeaveTeam a{
+	text-decoration: none;
+	color: white;
+}
+.confirmLeaveTeam button{
+	font-size: 1rem;
+	margin-left: 2vw;
+}
+.projectStamp{
+	font-size: 0.8rem;
+	color: #9c9c9c;
+}
+
+
+/* ##### TEAM ##### */
+.team{
+	display: inline-block;
+	margin-top: 3vw;
+}
+.team .teamContents{
+	display: flex;
+	align-items: center;
+	height: 6.65vw;
+}
+.team .title{
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin-right: 2vw;
+}
+.members{
+	display: flex;
+}
+.member{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4vw;
+	height: 4vw;
+	border-radius: 50%;
+	border: 0.15vw solid var(--colorTheme);
+	font-size: 1.3rem;
+	margin-right: 1vw;
+	font-weight: 800;
+	transition: 0.25s;
+}
+.owner{
+	background-color: var(--colorTheme) !important;
+	border: 0.15vw solid var(--colorTheme);
+	color: #211f2a;
+	font-size: 1.5rem;
+	transition: 0.25s;
+}
+.addMember{
+	width: 4vw;
+	height: 4vw;
+	border-radius: 50%;
+	border: 0.15vw solid var(--colorTheme);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.25s;
+}
+.addMember img{
+	width: 2vw;
+}
+.addEmail {
+	margin-left: 4vw;
+}
+.addEmail .memberFeedback{
+	font-size: 0.8rem;
+}
+.addEmail input{
+	border: .15vw solid #030014;
+	height: 4vw;
+}
+.addEmail input:focus{
+	border: .15vw solid var(--colorTheme);
+}
+.addEmail button{
+	position: absolute;
+	left: 31vw;
+	margin-top: 0.5vw;
+	border: none;
+	width: 4vw;
+	height: 4vw;
+	border-radius: 0;
+}
+.addEmail img{
+	width: 2.5vw;
+}
+
+
+
+/* ##### ADD TASK ##### */
+.addTask{
+	margin-top: 3vw;
+	width: 20vw;
+	height: 6.65vw;
+	overflow: hidden;
+	transition: 0.25s;
+}
+.circleLink{
+	cursor: pointer;
+	border: .15vw solid var(--colorTheme);
+	transition: 0.25s;
+}
+.circleLink img{
+	transition: 0.25s;
+}
+.addTask .title{
+	display: flex;
+	align-items: center;
+	margin-top: 1vw;
+	margin-bottom: 3vw;
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+.addTesk form{
+	display:flex;
+	flex-direction: column;
+}
+.membersText{
+	margin-bottom: 1vw;
+}
+.addTask .member{
+	cursor: pointer;
+	transition: 0.25s;
+}
+.instructionsText{
+	margin-top: 2vw;
+	margin-bottom: 1vw;
+}
+.instructionsInput{
+	width: 33vw;
+	height: 10vw;
+	background-color: #211f2a;
+	border: .15vw solid #030014;
+	border-radius: 0.5vw;
+	resize: none;
+	color: white;
+	padding: 1vw;
+	font-family: 'Open sans';
+	font-size: 1rem;
+}
+.instructionsInput:focus{
+	outline: none;
+	border: 0.15vw solid var(--colorTheme);
+}
+.addTask .buttons{
+	display: flex;
+	justify-content: end;
+	margin-top: 1vw;
+}
+.addTask button{
+	transition: 0.25s;
+	border: 0.15vw solid var(--colorTheme);
+}
+
+
+
+/* ##### YOUR TASKS ##### */
+.yourTasks,
+.teamTasks{
+	padding-top: 2vw;
+	margin-top: 3vw;
+}
+.yourTasks .title,
+.teamTasks .title{
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin-bottom: 2vw;
+}
+.yourTasks .title{
+	position:relative;
+	display: flex;
+	align-items:center;
+}
+.getTaskCount{
+	position: absolute;
+	right:0;
+}
+.getTaskCount p{
+	position: absolute;
+	top: -0.25vw;
+	left: -.75vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--colorTheme);
+	min-width:1.5vw;
+	height: 1.5vw;
+	padding: 0.2vw;
+	border-radius: 10vw;
+	color: #211f2a;
+	font-weight: 700;
+	border: 0.35vw solid #211f2a;
+	font-size: 1rem;
+	font-weight: 700;
+	transition: 0.25s;
+}
+.getTaskCount img{
+	width: 4vw;
+}
+.tasks{
+	margin-left: 2.25vw;
+}
+.task{
+	display: inline-block;
+	margin-bottom: 1.5vw;
+	cursor: pointer;
+}
+.taskContents{
+	display: flex;
+}
+.checkbox{
+	width: 2vw;
+	height: 2vw;
+	border: 0.15vw solid var(--colorTheme);
+	border-radius: 0.5vw;
+	margin-right: 1vw;
+	transition: 0.25s;
+}
+.checkbox img{
+	position: absolute;
+	width: 2vw !important;
+	margin: 0vw 0vw .75vw 0.25vw;
+}
+.stamp{
+	display: flex;
+	align-items:center;
+	color: #9c9c9c;
+	font-size:0.8rem;
+}
+.stamp .member{
+	width: 1.75vw;
+	height: 1.75vw;
+	margin-right: 0;
+	margin-left: 0.5vw;
+	font-weight: 500;
+	font-size: 0.7rem;
+	border: .1vw solid var(--colorTheme);
+	transition: 0.25s;
+}
+.resolved {
+	opacity: 50%;
+}
+.resolved .instructions {
+	text-decoration: line-through;
+}
+
+
+
+/* ##### MOBILE ##### */
+@media (max-width: 600px){
+	.colorPalette{
+		display:none !important;
+	}
+	.links{
+		gap: 5vw !important;
+		margin-right: 5vw !important;
+	}
+	.links a{
+		padding: 3vw;
+	}
+	.links img{
+		width: 6vw;	
+	}
+	.addTask{
+		height: 70vw;
+		width: 85vw;
+	}
+	.circleLink{
+		width: 6vw !important;	
+		height: 6vw !important;
+	}
+	.projecttitle .name{
+		align-items: end;
+	}
+	.projectTitle .icon{
+		width: 8vw !important;	
+		height: 8vw !important;
+		margin-left: 3vw;
+		}
+	.projectTitle .icon img{
+		width: 4vw !important;	
+		height: 4vw !important;
+	}
+	.projectTitle input{
+	width: 50vw;
+	height: 8vw;
+	}
+	.editName button{
+	width: 16vw;
+	height: 8vw;
+	}
+	.confirmDeleteAlert{
+	width:80vw !important;
+	}
+	.confirmDelete button{
+	width: 16vw;
+	height: 8vw;
+	}	
+	.confirmLeaveTeamAlert{
+	width:80vw !important;
+	}
+	.confirmLeaveTeam button{
+	width: 16vw;
+	height: 8vw;
+	}	
+	.team{
+	height: 16vw;
+	display:flex;
+	align-items:center !important;
+	margin-bottom: 5vw;
+	}
+	.team .member{
+		width: 6vw;
+		height: 6vw;
+		font-size: 1rem;
+	}
+	.team .addMember{
+	width:6vw;
+	height: 6vw;
+	}
+	.team .addMember img{
+		width: 4vw !important;
+		height: 4vw !important;
+	}
+
+		.addEmail input{
+		width: 50vw;
+		height: 6vw;
+		padding: 0;
+		font-size: 1rem;
+		margin-bottom: 5vw;
+	}
+	.addEmail button{
+		margin-left: 20vw;
+		width: 6vw !important;
+		height: 6vw !important;
+	}
+	.addEmail img{
+		width: 5.5vw !important;
+		height: 5.5vw !important;
+	}
+	
+	.addTask .circleLink{
+		display:none;
+	}
+	.addTask .member{
+		width: 10vw !important;
+		height: 10vw !important;
+	}
+	.addTask .addMember{
+		width: 10vw !important;
+		height: 10vw !important;
+	}
+	.addMember img{
+		width: 6vw !important;
+		height: 6vw !important;
+	}
+	.addTask input{
+		width: 50vw;
+		height: 6vw;
+		padding: 0;
+		font-size: 1rem;
+		margin-bottom: 5vw;
+	}
+	.addTask textarea{
+	width: 65vw;
+	height: 20vw;
+	}
+	.addTask button{
+		width: 16vw;
+		height: 8vw;
+	}
+	
+	
+	
+	.yourTasks,
+	.teamTasks{
+		width: 85vw;
+		margin-bottom: 10vw;
+		padding-top: 3vw;
+	}
+		.getTaskCount p{
+		width: 4vw;
+		height: 4vw;
+	}
+	.getTaskCount img{
+		width: 8vw;
+		height: 8vw;
+	}
+	.tasks{
+	margin-top: 7vw;
+	}
+	.task{
+		margin-bottom:4vw;
+	}
+	.task .checkbox{
+		width: 4vw !important;
+		height: 4vw !important;
+	}
+	.task .checkbox img{
+		width: 4vw !important;
+		height: 4vw !important;
+	}
+	.tasks .member{
+	display:none;
+	}
+	.task p{
+		max-width: 75vw;
+	}
+}
