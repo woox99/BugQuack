@@ -1,72 +1,100 @@
-### Gerating token
-Settings -> Developer Settings -> Personal Access Tokens -> Tokens (classic) -> Generate Classic Token
-Save the token somewhere
-
-### Adding Collaborators
-Settings -> Collaborators -> Add People
-
-### Branch Protection Rule
-Settings -> Branches -> Add branch protection rule
-* Type 'main' for 'Branch name pattern*'
-* Check box 'Require a pull request before merging'
-* Click create
-
-### Clone repo for first time cloning from Github
-        git clone <http address>
-
-### Access Key
-        cgit remote set-url origin https://<token>@github.com/<username of repo owner>/<reponame>.git
-
-### Pulling from Github
-* Before you code, every time, pull changes
-
-        git pull origin main
-
-### Creating Branch
-        git checkout -b "<yourname>"
-
-* Switch branch
-
-        git checkout <branchname>
-
-* Check which branch you're in (optional)
-
-        git branch
 
 
-### Pushing to Github
-* Make sure you're in your named branch
 
-        git add .
-        git commit -m "message"
-        git push -u origin <yourbranch>
+<img src="readme_assets/bugquack.png" width="700" alt="Image Description">
 
-* Now go to Github and create a pull request.
 
-### Creating Pull Request
-* Github -> repo -> Compare & pull request
+## About Bug Quack
 
-OR
+Bug Quack is a project management system for tracking bugs and managing tasks efficiently. Bug Quack is a full-stack demo project for my <a href="https://woox99.github.io/Portfolio/" target="_blank">portfolio</a>, and was my 3rd ever, non-tutorial project built. Quickly access the full functionality of the website with a Demo Account <a href="" target="_blank">here</a>. 
 
-* Github -> Repo -> You Branch -> 1 commit ahead -> Create pull request
+## Build Stack
 
-* Now someon must approve your pull request.
+![Static Badge](https://img.shields.io/badge/Java%20-%20%23967DBE) ![Static Badge](https://img.shields.io/badge/Spring%20Boot%20-%20%23967DBE) ![Static Badge](https://img.shields.io/badge/MySQL%20-%20%23967DBE) ![Static Badge](https://img.shields.io/badge/AWS%20EC2%20-%20%23967DBE) ![Static Badge](https://img.shields.io/badge/MVC%20Design%20-%20%23967DBE)
 
-### Approving a Pull Request
-Github -> Pull requests 
-* Click on the request 
-* click 'Add your review' 
-* Now review the changes and resolve any merg conflicts
-* If approved, Github will check for merging conflicts. If no conflicts:
-* Click Merge pull request
+## Overview
+* Leveraged Java Spring Boot for rapid development, capitalizing on its streamlined setup and configuration.
+* Implemented Spring Data Persistence API for object-relational mapping, simplifying interaction with MySQL
+relational database through standardized repository interfaces.
+*  Achieved a seamless user experience through asynchronous data loading with AJAX.
 
-### Reset Commit
-        git push -f origin <branch>
+## Feature Walkthrough
 
-### DONT MAKE THIS MISTAKE
-* Don't pull in the middle of coding.
-* Two people making changes to the same file (merge conflict) can easily be sorted out. 
-* Forgetting to pull from the repo before you code can also be easily sorted out. DO NOT do a pull in the middle of coding.
-Just finish your code and then push it to your branch. Then you can do a pull AFTER your push has been reviewed and uploaded.
-* However lets say you forget to pull from the repo before you start coding OR someone commits while your're coding AND you accidently created a merg conflict.. then thats not good. Don't do this. Now we have two options: A) make a copy of your code, delete your project, re-clone the github, re-insert your new code into the new clone, then deal with the merg conflic. B) spend 3 hours on youtube learning what a git stash is.
-* Do not code in the same file as someone else until they have pushed their code AND you have pulled that code.
+🔒 User Authentication & Authorization
+
+<img src="readme_assets/auth.png" width="375" alt="Image Description">
+
+<br>
+
+* Password ***hashing***
+* Registration ***validation***
+* Route protection
+* Demo Account
+
+---
+
+<br>
+
+<img src="readme_assets/viewproject.png" width="600" alt="Image Description">
+
+<br>
+
+
+***Create*** a project and ***add team members***.
+
+* One-to-many relationship between project and ***owner***.
+* Many-to-many relationship between projects and ***teams***.
+
+---
+
+<br>
+
+<img src="readme_assets/assigntasks.png" width="350" alt="Image Description">
+
+<br>
+
+
+***Create*** a task and ***assign*** it to one, or multiple team members. 
+
+* Many-to-many relationship between tasks and ***assigned members***.
+
+---
+
+<br>
+
+<img src="readme_assets/youtasks.png" width="600" alt="Image Description">
+
+<br>
+
+View and manage your tasks by marking them ***resolved***, or ***unresolved***.
+
+---
+
+<br>
+
+<img src="readme_assets/teamtask.png" width="600" alt="Image Description">
+
+<br>
+
+View and manage your team's tasks.
+
+---
+
+<br>
+
+<img src="readme_assets/colorTheme.png" width="375" alt="Image Description">
+
+<br>
+
+Change the color theme with the ***color selector***.
+
+---
+
+<br>
+
+<img src="readme_assets/bugquackmobile.png" width="375" alt="Image Description">
+
+<br>
+
+***Responsive*** design to fit any device.
+
