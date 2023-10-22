@@ -214,9 +214,9 @@
 			<div class="tasks" >
 				<c:forEach var="task" items="${teamUnresolvedTasks }">
 					<div class="taskWrapper">
-						<div class="task" data-is-resolved="${task.isResolved }" data-task-id="${task.id }">
+						<div class="task" data-is-resolved="${task.isResolved }" data-task-id="${task.id }" onClick="changeResolvedStatus(${task.id})">
 							<div class="taskContents">
-								<div class="checkbox" onClick="changeResolvedStatus(${task.id})">
+								<div class="checkbox">
 									<img style="display:none" src="/assets/check.png" alt="" data-checkmark-id="${task.id }"  />
 								</div>
 								<div>
@@ -236,9 +236,9 @@
 				</c:forEach>
 				<c:forEach var="task" items="${teamResolvedTasks }">
 					<div class="taskWrapper">
-						<div class="task resolved" data-is-resolved="${task.isResolved }" data-task-id="${task.id }">
+						<div class="task resolved" data-is-resolved="${task.isResolved }" data-task-id="${task.id }" onClick="changeResolvedStatus(${task.id})">
 							<div class="taskContents">
-								<div class="checkbox" onClick="changeResolvedStatus(${task.id})">
+								<div class="checkbox">
 									<img src="/assets/check.png" alt="" data-checkmark-id="${task.id }"  />
 								</div>
 								<div>
