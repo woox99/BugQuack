@@ -6,7 +6,9 @@
 
 ## About Bug Quack
 
-Bug Quack is a project management system for tracking bugs and managing tasks efficiently. Bug Quack is a full-stack demo project for my <a href="https://woox99.github.io/Portfolio/" target="_blank">portfolio</a>, and was my 3rd ever, non-tutorial project built. Quickly access the full functionality of the website with a Demo Account <a href="" target="_blank">here</a>. 
+Developed this application end-to-end with the Java Spring Boot stack and deployed on AWS. This application is a project management system that is dedicated to team collaboration and facilitating workflow efficiency.
+
+Currently Offline.
 
 ## Build Stack
 
